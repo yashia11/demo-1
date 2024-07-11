@@ -49,8 +49,8 @@ a {
     position: relative;
     background-color: #e6f0ff;
     height: calc(100vh - 90px);
-    display: flex;
-    flex-direction: column;
+    display: flex; */
+     flex-direction: column;
 }
 .navbar {
     display: flex;
@@ -156,13 +156,11 @@ a {
     border-radius: 12px;
 }
 .clients .images a{
-   display: flex;
+    justify-content: space-between;
+   /* display: flex;
    padding: 0px 42px;
    height: 90px;
-   align-items: center;
- 
-
-    
+   align-items: center; */
 }
 /* guides */
 .guides {
