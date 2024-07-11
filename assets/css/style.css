@@ -7,6 +7,7 @@
 html {
     font-size: 62.5%;
     font-family: "Poppins";
+    scroll-behavior: smooth;
 }
 body {
     font-size: 1.6rem;
@@ -37,15 +38,26 @@ a {
 }
 
 /* HEADER */
+.fix-header{
+    background-color: #e6f0ff;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+}
 .header {
     position: relative;
     background-color: #e6f0ff;
-    height: 100vh;
+    height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
 }
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    /* padding-top: 38px; */
+    padding: 12px 0;
+
 }
 .navbar ul {
     display: flex;
@@ -131,10 +143,26 @@ a {
     margin-top: 23px;
 }
 .clients .images {
+    /* position: relative; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 60px;
+    margin-top: 96px;
+    
+    /* width: 100%; */
+}
+.clients .images a:hover{
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+.clients .images a{
+   display: flex;
+   padding: 0px 42px;
+   height: 90px;
+   align-items: center;
+ 
+
+    
 }
 /* guides */
 .guides {
